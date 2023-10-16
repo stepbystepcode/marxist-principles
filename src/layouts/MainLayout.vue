@@ -119,7 +119,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     background-color: #ff4b4b;
-    left: 270px;
+    left: 70px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.24);
     &::before {
       content: '';
