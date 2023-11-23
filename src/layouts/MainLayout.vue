@@ -12,7 +12,7 @@
         <div><q-input filled v-model="text" label="搜索..." /></div>
       </q-toolbar>
       <div class="flag-warp">
-        <div class="flag">首页</div>
+        <router-link class="flag" to="/">首页</router-link>
       </div>
     </q-header>
 
@@ -119,6 +119,8 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     background-color: #ff4b4b;
+    color:#fff;
+    text-decoration: none;
     left: 70px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.24);
     &::before {

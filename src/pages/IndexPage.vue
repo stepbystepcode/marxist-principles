@@ -5,26 +5,32 @@
         :autoplay="autoplay" arrows transition-prev="slide-right" transition-next="slide-left"
         @mouseenter="autoplay = false" @mouseleave="autoplay = true">
         <q-carousel-slide :name="1" img-src="/banner/1.jpg" />
-        <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-        <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-        <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+        <q-carousel-slide :name="2" img-src="/banner/2.jpg" />
+        <q-carousel-slide :name="3" img-src="/banner/3.jpg" />
+        <q-carousel-slide :name="4" img-src="/banner/4.jpg" />
       </q-carousel>
       <div style="flex:1" class="q-px-lg"> <q-list bordered separator>
-          <q-item clickable v-ripple>
-            <q-item-section>Single line item</q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
+          <q-item>
             <q-item-section>
-              <q-item-label>Item with caption</q-item-label>
-              <q-item-label caption>Caption</q-item-label>
+              精选文章
             </q-item-section>
           </q-item>
 
           <q-item clickable v-ripple>
             <q-item-section>
-              <q-item-label overline>OVERLINE</q-item-label>
-              <q-item-label>Item with caption</q-item-label>
+
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section>
+
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section>
+
             </q-item-section>
           </q-item>
         </q-list></div>
@@ -37,6 +43,7 @@
       </div>
     </div>
     </div>
+    <q-img src="/files/map.png"></q-img>
   </q-page>
 </template>
 
@@ -60,7 +67,7 @@ const autoplay = ref(true);
     margin-top: 0;
     &:hover{
       transform: translate(0,-10px);
-      
+
     }
   }
 }
